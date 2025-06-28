@@ -1,0 +1,61 @@
+Basic command lines 
+FROM node:alpine
+COPY . /app
+WORKDIR /app
+CMD ["node", "app.js"]
+
+docker build -t hellodocker(filename)
+docker image ls //to show the image file size and details 
+docker run hellodocker // runs the docker file 
+
+Linux basic commands 
+ linux is an open source software
+ ubuntu,debian,alphine, fedora these are distributions of linux
+we have to load ubuntu first 
+docker run ubuntu // checks if we have ubuntu in system if not it installs from pre loaded version in docker hub
+
+docker run -it ubuntu // runs ubuntu server it means interactive which runs interactive mode 
+basic commands 
+    ubuntu 
+     echo hello > hello
+     whoami > root 
+     apt displays sub commands 
+     apt list //show all packages 
+     apt update // before installing a package we ahve to use this command so its gets updates and then we can installing
+     apt install nano .// installs nano
+     apt remove nano  // removes nano
+
+File directory in linux
+    bin,boot,dev,etc,home,root,lib,var,proc
+
+in linux everything is just a file 
+
+Navigating the file system
+ pwd shows our location in directory
+ ls shows all directory 
+  bin   dev  home  lib64  mnt  proc  run   srv  tmp  var
+  boot  etc  lib   media  opt  root  sbin  sys  usr
+
+cd path
+cd ..  exits directory
+cd ../.. goes to root directory
+
+Manipulating file directories
+ mkdir test 
+ mv test docker renamce the folder 
+ touch file.txt create the text
+ rm file.txt removes the files 
+ rm -r docker/ removes the dir 
+
+Edit and view files 
+cat file1.txt shows details in file
+more command for seeing large files 
+less command for seeing files where we can use up and down arrows to see previpus content where its not possible in more command
+head -n 4
+tail -n 3 // shows last 3 lines of files
+
+Redirection
+ > command to copt the content from one file to another 
+ cat file.txt > cat file2.txt
+ echo hello > hello.txt // adds the balues to a new file hello.txt which is hello
+
